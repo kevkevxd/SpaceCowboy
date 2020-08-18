@@ -19,7 +19,7 @@ Review.destroy_all
 
 
 
-res = RestClient.get("https://kitsu.io/api/edge/anime")
+res = RestClient.get("https://kitsu.io/api/edge/anime?page[limit]=20&page[offset]=0")
 res_body = res.body
 animes = JSON.parse(res_body)
 
