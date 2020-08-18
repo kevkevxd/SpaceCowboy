@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_17_163140) do
+ActiveRecord::Schema.define(version: 2020_08_18_145033) do
 
   create_table "animes", force: :cascade do |t|
     t.string "title"
@@ -23,19 +23,20 @@ ActiveRecord::Schema.define(version: 2020_08_17_163140) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "favorites", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "anime_id"
-    t.integer "rating"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "reviews", force: :cascade do |t|
     t.integer "user_id"
     t.integer "anime_id"
     t.text "comment"
     t.integer "comment_likes"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.integer "rating"
+  end
+
+  create_table "trackeds", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "anime_id"
+    t.integer "rating"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

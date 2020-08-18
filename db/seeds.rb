@@ -12,7 +12,7 @@ require 'rest-client'
 require 'json'
 
 Anime.destroy_all
-Favorite.destroy_all
+Tracked.destroy_all
 User.destroy_all
 Review.destroy_all
 
@@ -30,11 +30,8 @@ comment_attributes = RestClient.get("https://kitsu.io/api/edge/comments")
 all_comment_attributes = comment_attributes.body
 reviews = JSON.parse(all_comment_attributes)
 
-# favs = RestClient.get("https://kitsu.io/api/edge/comments")
-# favs_body = favs.body
-# favorites = JSON.parse(favs_body)
 
-
+puts "seeding"
 
 users["data"].each do |user|
     User.create(
@@ -61,18 +58,19 @@ animes["data"].each do |anime|
     Review.create(
       user_id: User.all.sample.id,
       anime_id: Anime.all.sample.id,
+      rating: rand(0..10),
       comment: comment["attributes"]["content"],
       comment_likes: comment["attributes"]["likesCount"]
     )
   end
 
-  # favorites["data"].each do |fav|
-    20.times do Favorite.create(
+    20.times do 
+    Tracked.create(
     user_id: User.all.sample.id,
     anime_id: Anime.all.sample.id,
     rating: rand(0..10)
     )
 end
-puts "seeded"
+
 
 end 
