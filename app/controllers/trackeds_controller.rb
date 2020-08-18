@@ -1,2 +1,5 @@
-class FavoritesController < ApplicationController
+class TrackedsController < ApplicationController
+    def index
+    end
+
 end
