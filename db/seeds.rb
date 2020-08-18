@@ -54,23 +54,23 @@ animes["data"].each do |anime|
     synopsis: anime["attributes"]["synopsis"]
   )
 
-  reviews["data"].each do |comment|
-    Review.create(
-      user_id: User.all.sample.id,
-      anime_id: Anime.all.sample.id,
-      rating: rand(0..10),
-      comment: comment["attributes"]["content"],
-      comment_likes: comment["attributes"]["likesCount"]
-    )
-  end
+  # reviews["data"].each do |comment|
+  #   Review.create(
+  #     user_id: User.all.sample.id,
+  #     anime_id: Anime.all.sample.id,
+  #     rating: rand(0..10),
+  #     comment: comment["attributes"]["content"],
+  #     comment_likes: comment["attributes"]["likesCount"]
+  #   )
+  # end
 
-    20.times do 
-    Tracked.create(
-    user_id: User.all.sample.id,
-    anime_id: Anime.all.sample.id,
-    rating: rand(0..10)
-    )
-end
+#     20.times do 
+#     Tracked.create(
+#     user_id: User.all.sample.id,
+#     anime_id: Anime.all.sample.id,
+#     rating: rand(0..10)
+#     )
+# end
 
 
 end 
