@@ -1,4 +1,4 @@
 class User < ApplicationRecord
-    has_many :favorites
-    has_many :animes, through: :favorites
+    has_many :trackeds
+    has_many :animes, through: :trackeds
 end

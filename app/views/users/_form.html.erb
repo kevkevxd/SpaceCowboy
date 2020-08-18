@@ -1,23 +1,17 @@
 <%= form_for @user do |f| %>
+<p>
 <%= f.label :name %>
 <%= f.text_field :name %>
-
+</p>
+<p>
 <%= f.label :bio %>
 <%= f.text_field :bio %>
-
+</p>
 <%= f.label :birthday %>
 <%= f.number_field :birthday %>
-
-<%= f.label :post_count %>
-<%= f.
-
-
-<%= f.label :life_spent_on_anime %>
+<p>
+<%= f.submit %>
+</p>
 <%end %>
 
 
-t.string "name"
-    t.text "bio"
-    t.integer "birthday"
-    t.integer "post_count"
-    t.integer "life_spent_on_anime"
