@@ -1,4 +1,11 @@
 <h1> All Animes </h1>
-<% @animes.each do |anime| %>
+
+<% if @current_user %>
+    <h3> Welcome <%= @current_user.name %>! </h3>
+<% else %>
+    <h3><%= link_to 'Create An Account', new_user_path%></h3>
+    <% end %>
+
+    <% @animes.each do |anime| %>
 <li><%= link_to anime.title, anime_path(anime) %></li>
 <%end%>

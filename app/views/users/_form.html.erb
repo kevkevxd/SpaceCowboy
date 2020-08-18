@@ -4,11 +4,15 @@
 <%= f.text_field :name %>
 </p>
 <p>
+<%= f.label :password %>
+<%= f.password_field :password %>
+</p>
+<p>
 <%= f.label :bio %>
 <%= f.text_field :bio %>
 </p>
 <%= f.label :birthday %>
-<%= f.number_field :birthday %>
+<%= f.date_select :birthday, {order: [:month, :day, :year], start_year: Date.today.year , end_year: Date.today.year - 100}%>
 <p>
 <%= f.submit %>
 </p>
