@@ -28,7 +28,7 @@ users["data"].each do |user|
     birthday: user["attributes"]["birthday"],
     post_count: user["attributes"]["postsCount"],
     life_spent_on_anime: user["attributes"]["lifeSpentOnAnime"],
-    password: "randstring"
+    password: "password"
   )
 end
 
