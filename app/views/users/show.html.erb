@@ -11,6 +11,3 @@ Life Spent Watching Anime (mins): <%= @user.life_spent_on_anime%> <br>
 <%=review.comment%>
 <%end%>
 
-<% @user.reviews.each do |review| %>
-<h3><%= link_to review.anime.title, anime_path(review.anime) %></h3>
-<% end %>

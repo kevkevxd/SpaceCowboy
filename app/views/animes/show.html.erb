@@ -6,3 +6,9 @@
 <h3><%= @anime.poster_image %></h3><br>
 <h3><%= @anime.synopsis %></h3>
 
+<h3><% @anime.reviews.each do |review|%>
+<div> User Rating (out of 10): <%= review.rating %></div><br>
+    User comment: <%= review.comment %> <br> 
+
+
+    <%end%>
