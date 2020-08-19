@@ -29,3 +29,6 @@ private
         params.require(:review).permit(:user_id, :anime_id, :rating)
     end 
 end
+
+# def dumb_change
+#     "puts"
