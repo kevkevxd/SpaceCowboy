@@ -30,7 +30,3 @@ private
     end 
 end
 
-# def dumb_change
-#     "puts"
-
-#fjdlksajflkasjlkfjklfsda
