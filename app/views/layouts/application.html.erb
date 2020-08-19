@@ -17,6 +17,7 @@
       <% if @current_user %>
     <li> Welcome <%= @current_user.name %>! </li>
     <li><%= link_to 'My Profile', user_path(@current_user)%></li>
+    <li><%= link_to 'Create A Review', new_review_path %></li>
 <% else %>
     <li><%= link_to 'Create An Account', new_user_path%></li>
     <% end %>

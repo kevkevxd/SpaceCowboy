@@ -1,13 +1,20 @@
-<h1> <%= @user.name %>'s Show Page </h1>
+<h1> <%= @user.name %>'s Home </h1>
 
 Bio: <%= @user.bio %> <br>
 Birthday: <%= @user.birthday %> <br>
 Post Count: <%= @user.post_count%> <br>
 Life Spent Watching Anime (mins): <%= @user.life_spent_on_anime%> <br>
 
+
+
 <h1>My Reviews</h1>
 
 <% @user.reviews.each do |review| %>
-<%=review.comment%>
+<div> <%= link_to review.anime.title, animes_path(review.anime) %></div>
+<div> User Score: <%=review.rating%> </div>
+User Review: <%=review.comment%>
+<br>
+
+
 <%end%>
 
