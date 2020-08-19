@@ -10,9 +10,19 @@
   </head>
 
   <body>
-    
-  
-    
+    <div class='nav'>
+    </div>
+
+    <ul>
+      <% if @current_user %>
+    <li> Welcome <%= @current_user.name %>! </li>
+<% else %>
+    <li><%= link_to 'Create An Account', new_user_path%></li>
+    <% end %>
+      <li><%= link_to 'Anime List', animes_path %></li>
+      <li><%= link_to 'My Profile', users_path %></li>
+
+    </ul>
     
     
     
