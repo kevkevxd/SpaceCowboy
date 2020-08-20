@@ -6,9 +6,13 @@ class ReviewsController < ApplicationController
         # @animes = Anime.all
     end
     def create 
-        @review = @current_user.reviews.create(review_params)
-        @review.save
-        redirect_to user_path(@review.user_id) 
+        @review = @current_user.reviews.build(review_params)
+        if @review.save
+            redirect_to user_path(@review.user_id)
+        else
+            flash[:my_error] = @review.errors.full_messages
+            redirect_to new_user_path
+        end
     end
     
     def edit;end
