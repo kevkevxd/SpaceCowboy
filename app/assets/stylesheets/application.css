@@ -16,38 +16,36 @@
 
 
 body {
-    background-color: #59656F;
+    background-color: #ccc9c9a9;
     
 }
 
-.topimage {
-  display: flexbox;
-  overflow: hidden;
-  border-radius: 8px;
-  align: center;
-  height: 150px;
-}
 
+/* Red Ed picture*/
 .headerimage{
   display: inline-block;
   padding: 10px;
 
   border-radius: 8px;
-  height: 125px;
+  height: 112px;
   width: 95%;
   
   background-image: url("https://i.imgflip.com/4c2ehp.jpg");
-  background-attachment: local; 
-  background-position: 50% 84%;
+  background-attachment: float; 
+  background-position: 50% 82%;
 }
 
 
-.nav {
-  background-image:
-  linear-gradient(to right, #456990,#D1E3DD), 
-  url('https://cdn.clipart.email/7ed1ad5643ce02a4349117a4a19fd3ea_flat800x800070fjpg_800-214.jpeg');
+/* .nav {
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.3em;
+  
+  /* background-image: url('https://cdn.clipart.email/7ed1ad5643ce02a4349117a4a19fd3ea_flat800x800070fjpg_800-214.jpeg');
   background-attachment: local;
-  background-position: 65% 37%;
+  background-position: 65% 37%; 
 
   margin: 0px auto;
   margin-bottom: 10px;
@@ -55,17 +53,28 @@ body {
   
   vertical-align: middle;
   border-radius: 5px;
-  
-  
-  display: inline-block;
-  padding: 10px;
-  color: #11161a;
-  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1.3em;
+} */
+
+ .nav {
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(163, 82, 82);
 }
 
- 
+ li .nav {
+  color: white;
+  float: left;
+}
 
+ /* li .nav {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}  */
 
 
 
