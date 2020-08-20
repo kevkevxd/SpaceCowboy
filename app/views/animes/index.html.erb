@@ -1,5 +1,4 @@
 
-
 <div class='anime_bar'>
     <ul>
         <li> All Animes </li>
@@ -8,12 +7,11 @@
     </ul>
 </div>
 
-
-
-
-
 <div class="anime_list">
     <% @animes.each do |anime| %>
         <li><%= link_to anime.title, anime_path(anime) %></li>
+        <div class="index-tile">
+            <img class="index-img" src="<%=anime.poster_image%>" alt="" style="width:200px;height:175px;object-fit: cover;">
+        </div>
     <%end%>
 </div>

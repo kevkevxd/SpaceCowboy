@@ -1,14 +1,13 @@
 <h1><%= @anime.title %></h1>
-
-<h3><%= @anime.start_date %></h3><br>
-<h3><%= @anime.end_date %></h3><br>
-<h3><%= @anime.average_rating %></h3><br>
-<h3><%= @anime.poster_image %></h3><br>
-<h3><%= @anime.synopsis %></h3>
-
-<h3><% @anime.reviews.each do |review|%>
+<p><%= @anime.average_rating %></p><br>
+<p> <img class="show-img" src="<%= @anime.poster_image %>" alt="<%= @anime.poster_image %>" style="width:600px;height:400px;object-fit: cover;"></p>
+<p><%= @anime.synopsis %></p>
+<p><%= @anime.start_date %></p><br>
+<p><%= @anime.end_date %></p><br>
+<p><% @anime.reviews.each do |review|%></p>
 <div> User Rating (out of 10): <%= review.rating %></div><br>
-    User comment: <%= review.comment %> <br> 
-
+    User comment: <%= review.comment %> <br>
 
     <%end%>
+
+

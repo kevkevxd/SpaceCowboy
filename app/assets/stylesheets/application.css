@@ -57,46 +57,26 @@ body {
   border-radius: 5px;
   
   
-  display: inline-block;
-  padding: 10px;
+  
+  /* padding: 10px; */
   color: #11161a;
   font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.3em;
 }
 
- 
+.nav-ul li {
+/* border: 1px solid black;   */
+padding: 0px 5px;
+height: 60px;
+line-height: 60px;
+display: inline-block;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Hover Feature */
-  li:hover {
-  background-color: #8b181ea8;
+.nav-ul li:hover {
+  background-color: #21527a5d;
   transition-duration: .5s;
-  }
-  
+}
+
   /* Links */
   a {
     text-decoration: none;
