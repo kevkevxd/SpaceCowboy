@@ -44,12 +44,12 @@ ActiveRecord::Schema.define(version: 2020_08_19_231336) do
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.text "bio"
-    t.date "birthday"
     t.integer "post_count", default: 0
     t.integer "life_spent_on_anime", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "password_digest"
+    t.date "birthday"
   end
 
 end
