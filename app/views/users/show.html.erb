@@ -2,7 +2,7 @@
 
 Bio: <%= @user.bio %> <br>
 Birthday: <%= @user.birthday %> <br>
-Post Count: <%= @user.post_count%> <br>
+Post Count: <%= @user.reviews.count%> <br>
 Life Spent Watching Anime (mins): <%= @user.life_spent_on_anime%> <br>
 
 
@@ -14,7 +14,6 @@ Life Spent Watching Anime (mins): <%= @user.life_spent_on_anime%> <br>
 <div> User Score: <%=review.rating%> </div>
 <div>User Review: <%=review.comment%></div><br>
 <br>
-
-
-<%end%>
+<div><%= button_to "Edit Review", edit_review_path(review), method: :get%>
+ <%end%>
 

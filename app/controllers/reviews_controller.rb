@@ -18,8 +18,12 @@ class ReviewsController < ApplicationController
     def edit;end
     
     def update
-        @review.update(review_params)
-        redirect_to review_path(@review)
+        if @review.update(review_params)
+        redirect_to user_path(@review.user)
+    else
+        flash[:my_error] = @review.errors.full_messages
+        redirect_to edit_review_path
+    end
     end
 
     def destroy
