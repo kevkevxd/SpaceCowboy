@@ -4,6 +4,7 @@
     <%end%>
 <%end%>
 
+<div class="review-form-page"
 <%= form_for @review do |f| %>
 
 <%= f.collection_select :anime_id, Anime.all, :id, :title %>
@@ -21,4 +22,5 @@
 <p>
 <%= f.submit %>
 </p>
+<div>
 <%end %>
