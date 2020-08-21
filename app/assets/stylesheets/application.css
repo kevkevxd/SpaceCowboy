@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Raleway:wght@200&family=Ropa+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&display=swap");
 body {
   background-color: #000000;
   font-family: "Raleway", sans-serif;
@@ -13,7 +13,7 @@ body {
 
 .header {
   font-family: "Sawarabi Mincho", sans-serif;
-  font-size: 90px;
+  font-size: 145px;
   display: inline-block;
   padding: 10px;
 
@@ -22,6 +22,7 @@ body {
 
   background-attachment: float;
   background-position: 50% 82%;
+  text-align: center;
 }
 .nav a {
   text-decoration: none;
@@ -34,21 +35,15 @@ body {
 .nav {
   vertical-align: middle;
   border-radius: 5px;
+  margin: auto;
 }
 
 .nav-ul li {
-  padding: 0px 5px;
+  padding: 20px;
   height: 60px;
   line-height: 60px;
   display: inline-block;
-}
-
-.nav {
-  display: block;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgba(97, 93, 93, 0);
+  font-size: 33px;
 }
 
 li .nav {
@@ -61,7 +56,8 @@ li .nav {
 }
 
 .anime_list {
-  max-width: 1150px;
+  max-width: 1500px;
+  padding-left: 27px;
 }
 .index-tile {
   position: relative;
@@ -93,20 +89,24 @@ li .nav {
 .anime_title {
   font-family: "Orbitron", sans-serif;
   font-size: 50px;
+  padding: 10px;
 }
 .anime_date {
   font-family: "Sawarabi Mincho", sans-serif;
-  font-size: 20px;
+  font-size: 23px;
+  padding-left: 16px;
+  padding-top: 3px;
 }
 .show-img {
   margin: 50px;
+  padding-left: 16px;
 }
 
 .synopsis {
-  font-family: "Alegreya Sans", sans-serif;
-  font-size: 30px;
+  font-family: "Barlow", sans-serif;
+  font-size: 36px;
   margin: 20px;
-  max-width: 600px;
+  max-width: 1170px;
 }
 
 .reviews {
@@ -118,4 +118,14 @@ li .nav {
 .average_rating {
   font-family: "Orbitron", sans-serif;
   font-size: 50px;
+}
+
+.review_item {
+  padding-bottom: 30px;
+}
+.main-container {
+  margin: auto;
+}
+.sign-up-form {
+  font-size: 25px;
 }
