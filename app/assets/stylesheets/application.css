@@ -1,50 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
 
- @import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
- 
 body {
-    font-family: 'Sawarabi Mincho', sans-serif;
-    color: white;
-    background-color: #1f1a1aa;  
-    background-image: url("https://images.unsplash.com/photo-1524802414218-3983cd08ed53?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
-    background-size: cover;
-  }
- 
-.header{
-  font-size 20px;
+  background-color: #000000;
+  font-family: "Raleway", sans-serif;
+  color: #f2f2df;
+  background-image: url("https://images.unsplash.com/photo-1524802414218-3983cd08ed53?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  font-family: "Sawarabi Mincho", sans-serif;
+  font-size: 90px;
   display: inline-block;
   padding: 10px;
 
   border-radius: 8px;
   height: 112px;
-  width: 95%;
-  
-  background-attachment: float; 
+
+  background-attachment: float;
   background-position: 50% 82%;
 }
- .nav {
-  margin: 0px auto;
-  margin-bottom: 10px;
-  width: 95%;
-  
+.nav a {
+  text-decoration: none;
+  color: #f2f2df;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.nav {
   vertical-align: middle;
   border-radius: 5px;
-  
-  /* padding: 10px; */
-  color: #a7abad;
-  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1.3em;
 }
 
 .nav-ul li {
-/* border: 1px solid black;   */
-color: #0d4764;
-padding: 0px 5px;
-height: 60px;
-line-height: 60px;
-display: inline-block;
+  padding: 0px 5px;
+  height: 60px;
+  line-height: 60px;
+  display: inline-block;
 }
 
- .nav {
+.nav {
   display: block;
   margin: 0;
   padding: 0;
@@ -52,42 +50,30 @@ display: inline-block;
   background-color: rgba(97, 93, 93, 0);
 }
 
- li .nav {
+li .nav {
   color: white;
   float: left;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.nav-ul li:hover {
-  background-color: #21527a5d;
-  transition-duration: .5s;
+.anime_list a {
+  color: white;
 }
 
-  /* Links */
-  a {
-    text-decoration: none;
-    color: black
-  }
-  
+.anime_list {
+  max-width: 1150px;
+}
+.index-tile {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.index-tile span {
+  position: absolute;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  padding: 3px;
+}
