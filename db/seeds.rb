@@ -125,3 +125,14 @@ animes4["data"].each do |anime|
 end 
 
 puts "seeded"
+
+
+# anime_array = []
+# counter = 0
+# while counter < 401 do 
+# res = RestClient.get("https://kitsu.io/api/edge/anime?page[limit]=20&page[offset]=#{counter}")
+# res_body = res.body
+# animes = JSON.parse(res_body)
+# anime_array << animes
+# counter += 20
+# end

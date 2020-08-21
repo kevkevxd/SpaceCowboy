@@ -1,13 +1,25 @@
-<h1><%= @anime.title %></h1>
-<p><%= @anime.average_rating %></p><br>
-<p> <img class="show-img" src="<%= @anime.poster_image %>" alt="<%= @anime.poster_image %>" style="width:600px;height:400px;object-fit: cover;"></p>
-<p><%= @anime.synopsis %></p>
-<p><%= @anime.start_date %></p><br>
-<p><%= @anime.end_date %></p><br>
-<p><% @anime.reviews.each do |review|%></p>
-<div> User Rating (out of 10): <%= review.rating %></div><br>
-    User comment: <%= review.comment %> <br>
+<div class="anime_title"><%= @anime.title %></div>
+<div class="show-left">
+      <div class="anime_date">
+        <%= @anime.start_date %> to
+        <%= @anime.end_date %>
+    </div>
+    <img class="show-img" src="<%= @anime.poster_image %>" alt="<%= @anime.poster_image %>" style="width:500px;height:400px;object-fit: cover;">
+  
+    <div class="synopsis"><%= @anime.synopsis %></div>
+</div>
 
-    <%end%>
+<div class="show-right">
+    <div class="average_rating">Average User Score  <%=@anime.average_rating %></div><br>
+    <div class="reviews">
+        <% @anime.reviews.each do |review|%>
+        <div class="review_item">
+            <div> User Rating (out of 10): <%= review.rating %></div><br>
+            <div> User comment: <%= review.comment %> </div>
+        </div>
+        <%end%>
+    </div>
+</div>
+
 
 

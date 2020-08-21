@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Raleway:wght@200&family=Ropa+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap");
 body {
   background-color: #000000;
   font-family: "Raleway", sans-serif;
@@ -76,4 +77,45 @@ li .nav {
   bottom: 0px;
   left: 0px;
   padding: 3px;
+}
+
+.show-right {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+}
+
+.show-left {
+  display: inline-block;
+  width: 50%;
+}
+
+.anime_title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 50px;
+}
+.anime_date {
+  font-family: "Sawarabi Mincho", sans-serif;
+  font-size: 20px;
+}
+.show-img {
+  margin: 50px;
+}
+
+.synopsis {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 30px;
+  margin: 20px;
+  max-width: 600px;
+}
+
+.reviews {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+}
+
+.average_rating {
+  font-family: "Orbitron", sans-serif;
+  font-size: 50px;
 }
