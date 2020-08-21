@@ -1,54 +1,27 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
 
-
+ @import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
+ 
 body {
-    background-color: #59656F;
-    
-}
-
-.topimage {
-  display: flexbox;
-  overflow: hidden;
-  border-radius: 8px;
-  align: center;
-  height: 150px;
-}
-
-.headerimage{
+    font-family: 'Sawarabi Mincho', sans-serif;
+    color: white;
+    background-color: #1f1a1aa;  
+    background-image: url("https://images.unsplash.com/photo-1524802414218-3983cd08ed53?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    background-size: cover;
+  }
+ 
+.header{
+  font-size 20px;
   display: inline-block;
   padding: 10px;
 
   border-radius: 8px;
-  height: 125px;
+  height: 112px;
   width: 95%;
   
-  background-image: url("https://i.imgflip.com/4c2ehp.jpg");
-  background-attachment: local; 
-  background-position: 50% 84%;
+  background-attachment: float; 
+  background-position: 50% 82%;
 }
-
-
-.nav {
-  background-image:
-  linear-gradient(to right, #456990,#D1E3DD), 
-  url('https://cdn.clipart.email/7ed1ad5643ce02a4349117a4a19fd3ea_flat800x800070fjpg_800-214.jpeg');
-  background-attachment: local;
-  background-position: 65% 37%;
-
+ .nav {
   margin: 0px auto;
   margin-bottom: 10px;
   width: 95%;
@@ -56,21 +29,56 @@ body {
   vertical-align: middle;
   border-radius: 5px;
   
-  
-  
   /* padding: 10px; */
-  color: #11161a;
+  color: #a7abad;
   font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.3em;
 }
 
 .nav-ul li {
 /* border: 1px solid black;   */
+color: #0d4764;
 padding: 0px 5px;
 height: 60px;
 line-height: 60px;
 display: inline-block;
 }
+
+ .nav {
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(97, 93, 93, 0);
+}
+
+ li .nav {
+  color: white;
+  float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .nav-ul li:hover {
   background-color: #21527a5d;
