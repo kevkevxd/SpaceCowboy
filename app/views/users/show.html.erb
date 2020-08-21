@@ -1,9 +1,12 @@
 <div class="user-bio-show-left">
-    <div class="show-page-username"><%=@user.name.capitalize%> </div>
+    <div class="show-page-username">Hi, <%=@user.name.capitalize%>! </div><br>
         <div class="show-avatar-section">
             Birthdate: <%= @user.birthday %> <br>
+            <br>
             Post Count: <%= @user.reviews.count%> <br>
+            <br>
             Life Spent Watching Anime (mins): <%= @user.life_spent_on_anime%><br>
+            <br>
             Bio: <%= @user.bio %> <br>
         </div>
     
@@ -23,7 +26,7 @@
     <div class="prev-reviewed-list">
         Your Score: <%=review.rating%> <br>
         <%=review.comment%>
-        <%= button_to "Edit Review", edit_review_path(review), method: :get%>
+        <%= button_to "Edit Review", edit_review_path(review), method: :get%><br>
         <%end%>                  
     </div>    
 </div>  
