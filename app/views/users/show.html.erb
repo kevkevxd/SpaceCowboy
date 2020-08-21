@@ -1,19 +1,31 @@
-<h1> <%= @user.name %>'s Home </h1>
+<div class="user-bio-show-left">
+    <div class="show-page-username"><%=@user.name.capitalize%> </div>
+        <div class="show-avatar-section">
+            Birthdate: <%= @user.birthday %> <br>
+            Post Count: <%= @user.reviews.count%> <br>
+            Life Spent Watching Anime (mins): <%= @user.life_spent_on_anime%><br>
+            Bio: <%= @user.bio %> <br>
+        </div>
+    
+</div>
 
-Bio: <%= @user.bio %> <br>
-Birthday: <%= @user.birthday %> <br>
-Post Count: <%= @user.reviews.count%> <br>
-Life Spent Watching Anime (mins): <%= @user.life_spent_on_anime%> <br>
+<div class="user-bio-show-right">
+    <div class="prev-review-header"> Previously Reviewed</div>   
 
+        
+    <div class="prev-reviewed-anime-title">          
+            <% @user.reviews.each do |review| %>
+            <%=review.anime.title%>
+            <%= link_to "go", anime_path(review.anime) %><br>
+    </div>
+    
 
-
-<h1>Previously Reviewed</h1>
-
-<% @user.reviews.each do |review| %>
-<div> <%= link_to review.anime.title, anime_path(review.anime) %></div>
-<div> User Score: <%=review.rating%> </div>
-<div>User Review: <%=review.comment%></div><br>
-<br>
-<div><%= button_to "Edit Review", edit_review_path(review), method: :get%>
- <%end%>
+    <div class="prev-reviewed-list">
+        Your Score: <%=review.rating%> <br>
+        <%=review.comment%>
+        <%= button_to "Edit Review", edit_review_path(review), method: :get%>
+        <%end%>                  
+    </div>    
+</div>  
+ 
 

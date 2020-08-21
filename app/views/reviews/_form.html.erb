@@ -14,8 +14,8 @@
 </p>
 
 <p>
-<%= f.label :rating %>
-<%= f.number_field(:rating, in: 1..10)%>
+<%= f.label :rating_out_of_100%>
+<%= f.text_field(:rating, in: 1..100)%>
 </p>
 
 <p>

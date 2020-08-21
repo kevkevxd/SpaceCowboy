@@ -2,8 +2,6 @@ class ReviewsController < ApplicationController
     before_action :find_reviews, only: [:edit, :update, :destroy]
     def new
         @review = Review.new
-        # @users = User.all 
-        # @animes = Anime.all
     end
     def create 
         @review = @current_user.reviews.build(review_params)
